@@ -20,7 +20,8 @@ mongoose.connect(
   }
 );
 
-// lead to api OR regualar routes
+// lead to api OR html routes
+require("./routes/html-route")(app);
 require("./routes/api-route")(app);
 
 app.listen(PORT, () => {
