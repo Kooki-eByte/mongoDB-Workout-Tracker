@@ -4,8 +4,6 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3010;
 
-const db = require("./models");
-
 const app = express();
 
 app.use(logger("dev"));
@@ -23,6 +21,7 @@ mongoose.connect(
 );
 
 // lead to api OR regualar routes
+require("./routes/api-route")(app);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
