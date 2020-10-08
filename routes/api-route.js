@@ -12,7 +12,18 @@ module.exports = function (app) {
       });
   });
 
-  app.get("/exercise/:id", (req, res) => {
+  // This route is made to creating a new workout, insert it to the database
+  app.put("/api/workouts/:id", (req, res) => {
     const workoutId = req.params.id;
+    console.log(workoutId);
+    console.log(req.body);
+
+    // db.Workout.findByIdAndUpdate(workoutId, req.body, (err, data) => {
+    //   if (err) {
+    //     res.json(err);
+    //   } else {
+    //     res.json(data);
+    //   }
+    // });
   });
 };
