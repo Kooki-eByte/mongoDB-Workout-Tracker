@@ -18,12 +18,23 @@ module.exports = function (app) {
     console.log(workoutId);
     console.log(req.body);
 
-    // db.Workout.findByIdAndUpdate(workoutId, req.body, (err, data) => {
-    //   if (err) {
-    //     res.json(err);
-    //   } else {
-    //     res.json(data);
-    //   }
-    // });
+    db.Workout.findByIdAndUpdate(workoutId, { $push: { exercises: req.body } })
+      .then((dbWorkout) => {
+        res.json(dbWorkout);
+      })
+      .catch((err) => {
+        res.json(err);
+      });
+  });
+
+  app.post("/api/workouts", ({ body }, res) => {
+    console.log(`This is the body ${body}`);
+    db.Workout.create(body)
+      .then((dbWorkout) => {
+        res.json(dbWorkout);
+      })
+      .catch((err) => {
+        res.json(err);
+      });
   });
 };
