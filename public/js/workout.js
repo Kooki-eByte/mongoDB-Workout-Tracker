@@ -8,11 +8,14 @@ async function initWorkout() {
 
     const workoutSummary = {
       date: formatDate(lastWorkout.day),
-      totalDuration: lastWorkout.exercises[0].duration,
+      // TODO - Fix the total Duration of the index page
+      totalDuration: lastWorkout.exercises.exercises.duration,
       numExercises: lastWorkout.exercises.length,
       ...tallyExercises(lastWorkout.exercises),
     };
-
+    console.log(
+      `The lastworkout exercises ${JSON.stringify(lastWorkout.exercises)}`
+    );
     renderWorkoutSummary(workoutSummary);
   } else {
     renderNoWorkoutText();
