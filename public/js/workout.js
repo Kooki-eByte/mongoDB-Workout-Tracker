@@ -9,7 +9,7 @@ async function initWorkout() {
     const workoutSummary = {
       date: formatDate(lastWorkout.day),
       // TODO - Fix the total Duration of the index page
-      totalDuration: lastWorkout.exercises.exercises.duration,
+      totalDuration: lastWorkout.exercises[0].duration,
       numExercises: lastWorkout.exercises.length,
       ...tallyExercises(lastWorkout.exercises),
     };
