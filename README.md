@@ -1,57 +1,58 @@
-# Unit 17 Nosql Homework: Workout Tracker
+# mongoDB-Workout-Tracker
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+![GitHub](https://img.shields.io/github/license/Kooki-eByte/mongoDB-Workout-Tracker)
 
-## User Story
+## Table of Contents
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+1. [Documentation](#documentation)
 
-## Business Context
+   1. [Description](#description)
+   2. [Installation Instructions](#Installation)
+   3. [Usage Information](#usage)
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+2. [Test Instructions](#test)
+3. [Contribution Guideline](#contribution)
+4. [License](#license)
+5. [Questions](#questions)
 
-## Acceptance Criteria
+## Documentation <a name="documentation"></a>
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+### Description <a name="description"></a>
 
-The user should be able to:
+- This project is to allow a user to be able to view, create, and track daily workouts. And log mulitple workouts on a given day. You can track the type of workout, name of the workout, weights, distance, weights, sets, and reps, as well as the duration of the exercise. This way you can sstay motivated and see your progress as you go along your week of staying healthy.
 
-  * Add exercises to a previous workout plan.
+### Installation Instructions <a name="Installation"></a>
 
-  * Add new exercises to a new workout plan.
+- To install this project you would have to click on the green button that says **code** and add in the terminal. To install the dependencies you would go to the terminal and make sure the directory is the repos name. Then go ahead and do a **npm i** to install all of the dependencies in this project.
 
-  * View the combined weight of multiple exercises on the `stats` page.
+### Usage Information <a name="usage"></a>
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+- You can either just go into the link in the end of the README and enjoy the web app, or if you are installing the project then we suggest having a mongoDB set up prior so you are able to have a mongo database created. There is also a seed file made to give you a few exercise examples and see how the project looks with data put in. You can implement this by typing **npm run seed** in the terminal. _be sure to be in the right directory or else this will lead to a error_
 
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+## Test Instructions <a name="test"></a>
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+- You can test api routes with postman, as well as create a test folder and install _"jest"_ in npm and you can test out functions and other blocks of code that way.
 
-## Commit Early and Often
+## Contribution Guideline <a name="contribution"></a>
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
+- The guideline to contribute will be to have a new branch and a descriptive pull request as to the changes you made or add and why.
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+## License <a name="license"></a>
 
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+- This Application is covered under the MIT License.
 
-Follow these guidelines for committing:
+## Questions <a name="questions"></a>
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+For any further questions checkout my **github page**
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+- [Kooki-eByte](https://github.com/Kooki-eByte)
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+and/or...
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+contact me by my **email** with a detailed Subject and message to what the message is for. _Only Contact my email for anymore questions related to contributing to this project._
 
-We want you to have well over 200 commits by graduation, so commit early and often!
+- officialcristianl@gmail.com
 
-## Submission on BCS
+## Link to the web app
 
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the GitHub repository
+- [MongoDB Workout Tracker](https://workout-tracker-mongo5.herokuapp.com/)
